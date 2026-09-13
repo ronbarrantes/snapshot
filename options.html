@@ -8,21 +8,48 @@
 </head>
 <body>
   <main class="settings">
-    <h1>Repo Snapshot Settings</h1>
-    <p class="intro">Choose how snapshots are named and where Chrome will save them.</p>
-    <form id="settingsForm">
-      <label>Filename prefix<input name="prefix" type="text" maxlength="40" placeholder="repo"></label>
-      <label>Downloads subfolder<input name="subfolder" type="text" maxlength="80" placeholder="RepoSnapshot" required></label>
-      <p class="hint">The folder is relative to Chrome’s configured Downloads directory.</p>
-      <fieldset>
-        <legend>Filename details</legend>
-        <label class="check"><input name="includeId" type="checkbox"> Include unique snapshot ID</label>
-        <label class="check"><input name="includeDate" type="checkbox"> Include date</label>
-        <label class="check"><input name="includeTime" type="checkbox"> Include time</label>
-      </fieldset>
-      <button type="submit">Save Settings</button>
-      <p id="status" role="status"></p>
-    </form>
+    <section class="settings-card">
+      <header class="section-header">
+        <div>
+          <h1>Repo Snapshot Settings</h1>
+          <p class="intro">Choose where snapshots go and how their filenames are built.</p>
+        </div>
+        <button id="resetButton" class="icon-button" type="button" title="Discard changes" aria-label="Discard changes">↺</button>
+      </header>
+
+      <form id="settingsForm" novalidate>
+        <section class="settings-section">
+          <h2>Destination</h2>
+          <p class="section-help">Snapshots are saved inside Chrome’s configured Downloads folder.</p>
+          <label>
+            Downloads subfolder
+            <input name="subfolder" type="text" maxlength="80" placeholder="RepoSnapshot" required>
+          </label>
+          <p class="hint">Use a folder name such as <code>Research/Snapshots</code>. Do not start with a slash or use <code>..</code>.</p>
+        </section>
+
+        <section class="settings-section">
+          <h2>Filename</h2>
+          <p class="section-help">The page title is included automatically.</p>
+          <label>
+            Filename prefix
+            <input name="prefix" type="text" maxlength="40" placeholder="repo">
+          </label>
+          <fieldset>
+            <legend>Include in each filename</legend>
+            <label class="check"><input name="includeId" type="checkbox"> Unique snapshot ID</label>
+            <label class="check"><input name="includeDate" type="checkbox"> Capture date</label>
+            <label class="check"><input name="includeTime" type="checkbox"> Capture time</label>
+          </fieldset>
+        </section>
+
+        <div class="actions">
+          <button id="discardButton" class="secondary" type="button">Discard changes</button>
+          <button type="submit">Save settings</button>
+        </div>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
   </main>
   <script src="defaults.js"></script>
   <script src="options.js"></script>
