@@ -1,5 +1,5 @@
 {
-  "name": "repo-snapshot",
+  "name": "snapshot",
   "private": true,
   "scripts": {
     "test": "node --test"

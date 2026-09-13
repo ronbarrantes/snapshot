@@ -1,4 +1,4 @@
-# Repo Snapshot
+# Snapshot
 
 A Chrome Manifest V3 extension that captures the visible text of the current web page and downloads it as Markdown.
 

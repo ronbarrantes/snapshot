@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Repo Snapshot Settings</title>
+  <title>Snapshot Settings</title>
   <link rel="stylesheet" href="options.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <section class="settings-card">
       <header class="section-header">
         <div>
-          <h1>Repo Snapshot Settings</h1>
+          <h1>Snapshot Settings</h1>
           <p class="intro">Choose where snapshots go and how their filenames are built.</p>
         </div>
         <button id="resetButton" class="icon-button" type="button" title="Discard changes" aria-label="Discard changes">↺</button>
@@ -23,7 +23,7 @@
           <p class="section-help">Snapshots are saved inside Chrome’s configured Downloads folder.</p>
           <label>
             Downloads subfolder
-            <input name="subfolder" type="text" maxlength="80" placeholder="RepoSnapshot" required>
+            <input name="subfolder" type="text" maxlength="80" placeholder="Snapshot" required>
           </label>
           <p class="hint">Use a folder name such as <code>Research/Snapshots</code>. Do not start with a slash or use <code>..</code>.</p>
         </section>
@@ -33,7 +33,7 @@
           <p class="section-help">The page title is included automatically.</p>
           <label>
             Filename prefix
-            <input name="prefix" type="text" maxlength="40" placeholder="repo">
+            <input name="prefix" type="text" maxlength="40" placeholder="snapshot">
           </label>
           <fieldset>
             <legend>Include in each filename</legend>
