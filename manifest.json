@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Repo Snapshot",
+  "version": "0.1.0",
+  "description": "Capture visible web page text as Markdown snapshots.",
+  "permissions": ["activeTab", "scripting", "storage", "downloads"],
+  "action": {
+    "default_title": "Capture page snapshot",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "icons": {}
+}

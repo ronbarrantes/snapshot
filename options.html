@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Repo Snapshot Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="settings">
+    <h1>Repo Snapshot Settings</h1>
+    <p class="intro">Choose how snapshots are named and where Chrome will save them.</p>
+    <form id="settingsForm">
+      <label>Filename prefix<input name="prefix" type="text" maxlength="40" placeholder="repo"></label>
+      <label>Downloads subfolder<input name="subfolder" type="text" maxlength="80" placeholder="RepoSnapshot" required></label>
+      <p class="hint">The folder is relative to Chrome’s configured Downloads directory.</p>
+      <fieldset>
+        <legend>Filename details</legend>
+        <label class="check"><input name="includeId" type="checkbox"> Include unique snapshot ID</label>
+        <label class="check"><input name="includeDate" type="checkbox"> Include date</label>
+        <label class="check"><input name="includeTime" type="checkbox"> Include time</label>
+      </fieldset>
+      <button type="submit">Save Settings</button>
+      <p id="status" role="status"></p>
+    </form>
+  </main>
+  <script src="defaults.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

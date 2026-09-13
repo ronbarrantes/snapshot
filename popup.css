@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; width: 330px; color: #1f2937; font: 14px/1.4 system-ui, sans-serif; background: #fff; }
+.popup { padding: 18px; }
+header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+h1 { margin: 0; font-size: 18px; }
+.subtitle { margin: 3px 0 0; color: #6b7280; font-size: 12px; }
+.icon-button { border: 0; border-radius: 8px; background: transparent; cursor: pointer; font-size: 18px; padding: 4px 7px; }
+.icon-button:hover { background: #f3f4f6; }
+.destination { margin: 18px 0; padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; background: #f9fafb; }
+.label { display: block; margin-bottom: 4px; color: #6b7280; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+code { display: block; overflow-wrap: anywhere; color: #374151; font-size: 12px; }
+.capture-button { width: 100%; border: 0; border-radius: 8px; padding: 11px 14px; color: #fff; background: #2563eb; cursor: pointer; font-weight: 650; }
+.capture-button:hover { background: #1d4ed8; }
+.capture-button:disabled { cursor: wait; opacity: .65; }
+.status { min-height: 20px; margin: 10px 0 0; color: #4b5563; font-size: 12px; }
+.status.error { color: #b91c1c; }
+.status.success { color: #047857; }

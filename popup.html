@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Repo Snapshot</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header>
+      <div>
+        <h1>Repo Snapshot</h1>
+        <p class="subtitle">Capture this page as Markdown</p>
+      </div>
+      <button id="settingsButton" class="icon-button" title="Open settings" aria-label="Open settings">⚙</button>
+    </header>
+    <section class="destination" aria-live="polite">
+      <span class="label">Saving to</span>
+      <code id="destination">Loading…</code>
+    </section>
+    <button id="captureButton" class="capture-button">Capture Snapshot</button>
+    <p id="status" class="status" role="status"></p>
+  </main>
+  <script src="defaults.js"></script>
+  <script src="filename.js"></script>
+  <script src="markdown.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
