@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Repo Snapshot",
+  "name": "Snapshot",
   "version": "0.1.0",
   "description": "Capture visible web page text as Markdown snapshots.",
   "permissions": ["activeTab", "scripting", "storage", "downloads"],

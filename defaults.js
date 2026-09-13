@@ -1,6 +1,6 @@
 const DEFAULT_SETTINGS = {
-  prefix: "repo",
-  subfolder: "RepoSnapshot",
+  prefix: "snapshot",
+  subfolder: "Snapshot",
   includeId: true,
   includeDate: false,
   includeTime: false
